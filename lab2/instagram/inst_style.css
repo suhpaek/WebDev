@@ -1,0 +1,148 @@
+body{
+    min-height:100vh;
+    display:flex;
+    margin:0;
+    flex-direction: column;
+    font-family:sans-serif;
+}
+
+.container{
+    flex:1;
+    display:flex;
+}
+
+.left{
+    padding:2.5rem;
+}
+
+.logo{
+    width:170px;
+    margin-top:70px;
+}
+.look{
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    padding: 100px 250px;
+    font-size: 80px;
+    text-align: center;
+    max-width: 900px;
+    margin-left:300px;
+    margin-top:-200px;
+}
+
+.stories{
+    margin-left:380px;
+    width:1200px;
+    margin-top:-200px;
+}
+
+.close_friends{
+    background: linear-gradient(to right, orange, red, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline;
+}
+
+
+
+.right{
+  width: 520px;
+  padding: 70px 80px;
+  background: #fff;
+  border-left: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.right > p:first-child{
+  align-self: flex-start;
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.right input{
+  width: 100%;
+  height: 64px;
+  padding: 0 18px;
+  border: 1px solid #dfe3e8;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 16px;
+  outline: none;
+  margin: 0;
+}
+
+.right input::placeholder{
+  color: #9aa0a6;
+}
+
+.right button{
+  width: 100%;
+  height: 60px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sign-in{
+  border: none;
+  background: #7ea6e9;
+  color: #fff;
+  width:500px;
+}
+
+.forgot_password{
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  margin: 2px 0 10px;
+}
+
+.fb-sign-in{
+  background: #fff;
+  border: 1px solid #dfe3e8;
+  color: #111;
+}
+
+.new-acc{
+  background: #fff;
+  border: 2px solid #4a86f7;
+  color: #2f6fed;
+}
+
+.meta{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+
+
+footer{
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    color: gray;
+    text-decoration: None;
+    font-size: 12px;
+    text-align: center;
+}
+
+a{
+    color: gray;
+    text-decoration: None;
+    margin: 8px;
+    font-size: 12px;
+}
+
+
