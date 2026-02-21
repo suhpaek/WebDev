@@ -1,0 +1,174 @@
+
+
+.product-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.product-title {
+  margin: 12px 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-desc {
+  margin: 0 0 12px;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.35;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.kaspi-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(243, 126, 237);
+  color: rgb(255, 250, 164);
+  box-shadow: 0 0 5px rgb(243, 126, 237);
+}
+.kaspi-btn:hover{
+    background-color: rgb(255, 250, 164);
+    color:rgb(243, 126, 237);
+    box-shadow: 0 0 5px rgb(255, 250, 164);
+}
+
+.price{
+    font-weight: bold;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-desc{
+  flex: 1;              /* описание занимает “середину” */
+  margin-bottom: 12px;
+}
+
+.card-bottom{
+  margin-top: auto;     /* прижимает цену+кнопку вниз */
+}
+
+.search-wrap{
+  max-width: 1200px;
+  margin: 16px auto 10px;
+  padding: 0 16px;
+}
+
+.search{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 14px;
+}
+
+.easter{
+  max-width: 1200px;
+  margin: 12px auto 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.85);
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.easter img{
+  width: 180px;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 14px;
+}
+
+.easter p{
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.counter{
+    margin-left: 20px;
+}
+
+.categories {
+  max-width: 1200px;
+  margin: 10px auto 20px;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categories button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.categories button:hover {
+  background: #f3f3f3;
+}
+
+.categories button.active {
+  background: rgb(243, 126, 237);
+  color: white;
+}
+
+.top-rated-btn {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: none;
+  background: gold;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.top-rated-btn:hover {
+  transform: scale(1.05);
+  background: orange;
+}
