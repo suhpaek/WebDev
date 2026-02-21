@@ -1,0 +1,89 @@
+.notice {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
+}
+
+.notice.error {
+  background: rgba(255, 70, 70, 0.12);
+  border-color: rgba(255, 70, 70, 0.25);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.album-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.album-link {
+  text-decoration: none;
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.album-id {
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+}
+
+.album-title {
+  font-size: 15px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.92);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.album-sub{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.album-card:hover {
+  background: rgba(255,255,255,0.09);
+}
+
+.btn {
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.btn.danger {
+  border: none;
+  background: #e78fb3;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn.danger:hover {
+  background: #d66a9b;
+  transform: scale(1.05);
+}

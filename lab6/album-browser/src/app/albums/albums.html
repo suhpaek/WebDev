@@ -1,0 +1,23 @@
+<h2>Albums</h2>
+
+<div *ngIf="error" class="notice error">{{ error }}</div>
+
+<ng-container *ngIf="albums$ | async as albums; else loading">
+  <div class="grid">
+    <div class="album-card" *ngFor="let album of albums">
+      <a class="album-link" [routerLink]="['/albums', album.id]">
+        <div class="album-id">#{{ album.id }}</div>
+        <div class="album-title">{{ prettyTitle(album.id) }}</div>
+        <div class="album-sub">Original: {{ album.title }}</div>
+      </a>
+
+      <button class="btn danger" type="button" (click)="deleteAlbum(album.id)">
+        Delete
+      </button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  <div class="notice">Loading...</div>
+</ng-template>

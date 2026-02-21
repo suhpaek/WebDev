@@ -1,0 +1,15 @@
+<h2>Album {{ albumId }} Gallery</h2>
+
+<div class="grid">
+  <figure class="card" *ngFor="let p of photos$ | async">
+    <img
+    [src]="'https://cataas.com/cat?width=300&height=300&random=' + p.id"
+    alt="Cat photo"
+    />
+    <figcaption>
+      Photo {{ p.id }}
+    </figcaption>
+  </figure>
+</div>
+
+<button class="back" (click)="back()">← Back to Album</button>

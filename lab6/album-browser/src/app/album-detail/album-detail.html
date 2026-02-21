@@ -1,0 +1,29 @@
+<h2>Album Details</h2>
+
+<ng-container *ngIf="album$ | async as album; else loading">
+
+  <h3>Album #{{ album.id }}</h3>
+  <p><strong>Owner:</strong> User {{ album.userId }}</p>
+
+  <label>Edit title:</label>
+  <input [(ngModel)]="editedTitle" />
+
+  <button (click)="save(album)">Save Changes</button>
+
+  <br /><br />  
+  
+  <a routerLink="/albums" class="back-btn">
+    ← Back to Albums
+  </a>
+
+  <a [routerLink]="['/albums', album.id, 'photos']">
+    View Photos →
+  </a>
+
+
+
+</ng-container>
+
+<ng-template #loading>
+  Loading...
+</ng-template>
