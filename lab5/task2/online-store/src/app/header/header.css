@@ -31,7 +31,7 @@ a.logo:hover{
 a.logo{
   display: flex;
   align-items: center;
-  height: 50px;        /* одинаковая высота */
+  height: 50px;
   padding: 0 18px;
   border-radius: 20px;
   font-weight: bold;

@@ -77,12 +77,12 @@
 }
 
 .product-desc{
-  flex: 1;              /* описание занимает “середину” */
+  flex: 1;
   margin-bottom: 12px;
 }
 
 .card-bottom{
-  margin-top: auto;     /* прижимает цену+кнопку вниз */
+  margin-top: auto;
 }
 
 .search-wrap{

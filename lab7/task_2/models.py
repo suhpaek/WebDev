@@ -1,44 +1,54 @@
-class Vehicle:
-    def __init__(self, brand: str, model: str, year: int) -> None:
+class Device:
+    def __init__(self, brand, model, price):
         self.brand = brand
         self.model = model
-        self.year = year
+        self.price = price
 
-    def start(self) -> str:
-        return f"{self.brand} {self.model} starts moving."
+    def turn_on(self):
+        return f"{self.brand} {self.model} включается"
 
-    def drive(self) -> str:
-        return f"{self.brand} {self.model} is driving on the road."
+    def device_type(self):
+        return "Это электронное устройство"
 
-    def __str__(self) -> str:
-        return f"{self.year} {self.brand} {self.model}"
-
-
-class Car(Vehicle):
-    def __init__(self, brand: str, model: str, year: int, doors: int, electric: bool) -> None:
-        super().__init__(brand, model, year)
-        self.doors = doors
-        self.electric = electric
-
-    def drive(self) -> str:
-        power_type = "electric" if self.electric else "gas-powered"
-        return f"Car {self} ({power_type}) cruises smoothly with {self.doors} doors."
-
-    def honk(self) -> str:
-        return f"{self.brand} {self.model}: Beep beep!"
+    def __str__(self):
+        return f"{self.brand} {self.model}, цена: {self.price}$"
 
 
-class Bicycle(Vehicle):
-    def __init__(self, brand: str, model: str, year: int, gear_count: int, has_bell: bool) -> None:
-        super().__init__(brand, model, year)
-        self.gear_count = gear_count
-        self.has_bell = has_bell
+class Laptop(Device):
+    def __init__(self, brand, model, price, ram, cpu):
+        super().__init__(brand, model, price)
+        self.ram = ram
+        self.cpu = cpu
 
-    def drive(self) -> str:
-        bell_text = "with a bell" if self.has_bell else "without a bell"
-        return f"Bicycle {self} is pedaled through the park ({self.gear_count} gears, {bell_text})."
+    def code(self):
+        return f"{self.brand} {self.model} используется для программирования"
 
-    def ring_bell(self) -> str:
-        if not self.has_bell:
-            return f"{self.brand} {self.model} has no bell to ring."
-        return f"{self.brand} {self.model}: Ring ring!"
+    def device_type(self):
+        return f"Ноутбук с процессором {self.cpu} и {self.ram} GB RAM"
+
+
+class Smartphone(Device):
+    def __init__(self, brand, model, price, camera_mp, sim_count):
+        super().__init__(brand, model, price)
+        self.camera_mp = camera_mp
+        self.sim_count = sim_count
+
+    def call(self):
+        return f"{self.brand} {self.model} совершает звонок"
+
+    def device_type(self):
+        return f"Смартфон с камерой {self.camera_mp} MP и {self.sim_count} SIM"
+
+
+class Tablet(Device):
+    def __init__(self, brand, model, price, screen_size, supports_pen):
+        super().__init__(brand, model, price)
+        self.screen_size = screen_size
+        self.supports_pen = supports_pen
+
+    def draw(self):
+        return f"{self.brand} {self.model} используется для рисования"
+
+    def device_type(self):
+        pen_status = "поддерживает стилус" if self.supports_pen else "не поддерживает стилус"
+        return f"Планшет {self.screen_size} дюймов, {pen_status}"

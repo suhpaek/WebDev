@@ -1,0 +1,45 @@
+<div class="search-wrap">
+  <input
+    class="search"
+    type="text"
+    placeholder="Поиск по товарам..."
+    [(ngModel)]="query"
+  />
+</div>
+
+<div class="categories">
+  <button 
+    (click) = "showAll()" 
+    [class.active]="selectedCategoryId === null">
+      Все 
+  </button>
+
+  <button
+    *ngFor="let c of categories"
+    (click)="selectCategory(c.id)"
+    [class.active]="selectedCategoryId === c.id"
+  >
+    {{ c.name }}
+  </button>
+
+  <button 
+  class="top-rated-btn"
+  (click)="showTopProduct()">
+    top rated
+  </button>
+
+</div>
+
+
+
+@if (isLimonEasterEgg()) {
+  <div class="easter">
+    <img src="assets/images/limon.JPG" alt="limon easter egg" />
+    <p>пж поставьте фуллку</p>
+  </div>
+}
+
+<app-product-list
+  [products]="filteredProducts"
+  (deleted)="deleteFromSource($event)"
+></app-product-list>

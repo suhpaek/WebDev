@@ -1,31 +1,23 @@
-from models import Bicycle, Car, Vehicle
+from models import Device, Laptop, Smartphone, Tablet
 
 
-def main() -> None:
-    vehicles: list[Vehicle] = [
-        Vehicle("Generic", "Transporter", 2020),
-        Car("Tesla", "Model 3", 2024, doors=4, electric=True),
-        Bicycle("Trek", "FX 2", 2023, gear_count=18, has_bell=True),
-    ]
+def main():
+    device = Device("Sony", "X100", 500)
+    laptop = Laptop("Lenovo", "ThinkPad X1", 1800, 16, "Intel Core i7")
+    smartphone = Smartphone("Samsung", "Galaxy S24", 1200, 50, 2)
+    tablet = Tablet("Apple", "iPad Air", 900, 10.9, True)
 
-    print("vehicle objects:")
-    for vehicle in vehicles:
-        print(vehicle)
+    devices = [device, laptop, smartphone, tablet]
 
-    print("\nshared behavior:")
-    for vehicle in vehicles:
-        print(vehicle.start())
+    for item in devices:
+        print(item)
+        print(item.turn_on())
+        print(item.device_type())
+        print()
 
-    print("\npolymorphism (drive method):")
-    for vehicle in vehicles:
-        print(vehicle.drive())
-
-    print("\nchild-specific behavior:")
-    for vehicle in vehicles:
-        if isinstance(vehicle, Car):
-            print(vehicle.honk())
-        if isinstance(vehicle, Bicycle):
-            print(vehicle.ring_bell())
+    print(laptop.code())
+    print(smartphone.call())
+    print(tablet.draw())
 
 
 if __name__ == "__main__":
