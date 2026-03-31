@@ -1,8 +1,10 @@
 {
   "info": {
-    "_postman_id": "5e5d7cf9-3af6-4c57-8e4f-b53b6a7c9b21",
+    "_postman_id": "793347d0-ed88-4f51-81b6-5528020fa65f",
     "name": "Online Shop API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53623394",
+    "_collection_link": "https://go.postman.co/collection/53623394-793347d0-ed88-4f51-81b6-5528020fa65f?source=collection_link"
   },
   "item": [
     {
@@ -25,7 +27,73 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Get All Categories",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "categories",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 08:22:37 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "155"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 2,\n        \"name\": \"dssdgf\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Electronics\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Books\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Clothing\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Home\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Sports\"\n    }\n]"
+            }
+          ]
         },
         {
           "name": "Get Category by ID",
@@ -45,7 +113,74 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Get Category by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories/2/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "categories",
+                    "2",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:07:45 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "24"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 2,\n    \"name\": \"dssdgf\"\n}"
+            }
+          ]
         },
         {
           "name": "Get Products by Category",
@@ -66,7 +201,75 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Get Products by Category",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories/2/products/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "categories",
+                    "2",
+                    "products",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:08:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "580"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 3,\n        \"name\": \"svsz\",\n        \"price\": 4,\n        \"description\": \"ssddss\",\n        \"count\": 3,\n        \"is_active\": false,\n        \"category\": 2\n    },\n    {\n        \"id\": 4,\n        \"name\": \"sdks\",\n        \"price\": 5,\n        \"description\": \"sds\",\n        \"count\": 4,\n        \"is_active\": false,\n        \"category\": 2\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Product 8\",\n        \"price\": 2000,\n        \"description\": \"Description for product 8\",\n        \"count\": 13,\n        \"is_active\": false,\n        \"category\": 2\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Product 14\",\n        \"price\": 2750,\n        \"description\": \"Description for product 14\",\n        \"count\": 9,\n        \"is_active\": true,\n        \"category\": 2\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Product 20\",\n        \"price\": 3500,\n        \"description\": \"Description for product 20\",\n        \"count\": 5,\n        \"is_active\": false,\n        \"category\": 2\n    }\n]"
+            }
+          ]
         },
         {
           "name": "Create Category",
@@ -94,7 +297,82 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Create Category",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"alo\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "categories",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:09:09 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "21"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 9,\n    \"name\": \"alo\"\n}"
+            }
+          ]
         },
         {
           "name": "Update Category",
@@ -123,7 +401,90 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Update Category",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Updated Category\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories/2/?Product 2=100",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "categories",
+                    "2",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "Product 2",
+                      "value": "100",
+                      "description": "djjd"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:09:34 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "34"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 2,\n    \"name\": \"Updated Category\"\n}"
+            }
+          ]
         },
         {
           "name": "Delete Category",
@@ -143,7 +504,70 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Delete Category",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories/8/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "categories",
+                    "8",
+                    ""
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:09:44 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
         }
       ]
     },
@@ -167,7 +591,73 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Get All Products",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/products/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "products",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:09:51 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1860"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 3,\n        \"name\": \"svsz\",\n        \"price\": 4,\n        \"description\": \"ssddss\",\n        \"count\": 3,\n        \"is_active\": false,\n        \"category\": 2\n    },\n    {\n        \"id\": 4,\n        \"name\": \"sdks\",\n        \"price\": 5,\n        \"description\": \"sds\",\n        \"count\": 4,\n        \"is_active\": false,\n        \"category\": 2\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Product 5\",\n        \"price\": 1625,\n        \"description\": \"Description for product 5\",\n        \"count\": 10,\n        \"is_active\": true,\n        \"category\": 5\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Product 6\",\n        \"price\": 1750,\n        \"description\": \"Description for product 6\",\n        \"count\": 11,\n        \"is_active\": true,\n        \"category\": 6\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Product 8\",\n        \"price\": 2000,\n        \"description\": \"Description for product 8\",\n        \"count\": 13,\n        \"is_active\": false,\n        \"category\": 2\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Product 9\",\n        \"price\": 2125,\n        \"description\": \"Description for product 9\",\n        \"count\": 14,\n        \"is_active\": true,\n        \"category\": 3\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Product 10\",\n        \"price\": 2250,\n        \"description\": \"Description for product 10\",\n        \"count\": 5,\n        \"is_active\": true,\n        \"category\": 4\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Product 11\",\n        \"price\": 2375,\n        \"description\": \"Description for product 11\",\n        \"count\": 6,\n        \"is_active\": true,\n        \"category\": 5\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Product 12\",\n        \"price\": 2500,\n        \"description\": \"Description for product 12\",\n        \"count\": 7,\n        \"is_active\": false,\n        \"category\": 6\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Product 14\",\n        \"price\": 2750,\n        \"description\": \"Description for product 14\",\n        \"count\": 9,\n        \"is_active\": true,\n        \"category\": 2\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Product 15\",\n        \"price\": 2875,\n        \"description\": \"Description for product 15\",\n        \"count\": 10,\n        \"is_active\": true,\n        \"category\": 3\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Product 16\",\n        \"price\": 3000,\n        \"description\": \"Description for product 16\",\n        \"count\": 11,\n        \"is_active\": false,\n        \"category\": 4\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Product 17\",\n        \"price\": 3125,\n        \"description\": \"Description for product 17\",\n        \"count\": 12,\n        \"is_active\": true,\n        \"category\": 5\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Product 18\",\n        \"price\": 3250,\n        \"description\": \"Description for product 18\",\n        \"count\": 13,\n        \"is_active\": true,\n        \"category\": 6\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Product 20\",\n        \"price\": 3500,\n        \"description\": \"Description for product 20\",\n        \"count\": 5,\n        \"is_active\": false,\n        \"category\": 2\n    }\n]"
+            }
+          ]
         },
         {
           "name": "Get Product by ID",
@@ -187,7 +677,74 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Get Product by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/products/3/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "products",
+                    "3",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:10:17 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "98"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 3,\n    \"name\": \"svsz\",\n    \"price\": 4,\n    \"description\": \"ssddss\",\n    \"count\": 3,\n    \"is_active\": false,\n    \"category\": 2\n}"
+            }
+          ]
         },
         {
           "name": "Create Product",
@@ -215,7 +772,82 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Create Product",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"New Product\",\n  \"price\": 1999.99,\n  \"description\": \"Demo product created from Postman\",\n  \"count\": 10,\n  \"is_active\": true,\n  \"category\": 2\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/products/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "products",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:11:13 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "137"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 21,\n    \"name\": \"New Product\",\n    \"price\": 1999.99,\n    \"description\": \"Demo product created from Postman\",\n    \"count\": 10,\n    \"is_active\": true,\n    \"category\": 2\n}"
+            }
+          ]
         },
         {
           "name": "Update Product",
@@ -244,7 +876,90 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Update Product",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Updated Product\",\n  \"price\": 2499.99,\n  \"description\": \"Updated from Postman\",\n  \"count\": 7,\n  \"is_active\": true,\n  \"category\": 2\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/products/4/?Product 4=33",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "products",
+                    "4",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "Product 4",
+                      "value": "33",
+                      "description": "djjd"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:12:38 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "126"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 4,\n    \"name\": \"Updated Product\",\n    \"price\": 2499.99,\n    \"description\": \"Updated from Postman\",\n    \"count\": 7,\n    \"is_active\": true,\n    \"category\": 2\n}"
+            }
+          ]
         },
         {
           "name": "Delete Product",
@@ -264,7 +979,70 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "name": "Delete Product",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/products/20/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "products",
+                    "20",
+                    ""
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 31 Mar 2026 09:13:01 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.14.2"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
         }
       ]
     }
